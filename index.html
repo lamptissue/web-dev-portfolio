@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Neil Carribine Portfoilo</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="fixed-top">
+      <div class="header-title">
+        <h3>
+          <a href="index.html" class="fw-bold">Neil Carribine</a>
+        </h3>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects" class="projects"> Projects </a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- Main -->
+    <!-- About -->
+    <main class="mt-4">
+      <section class="about p-lg-5 mb-5" id="about">
+        <div class="container h-100">
+          <h1 class="pb-5 d-flex justify-content-center fw-bold title">
+            About
+          </h1>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div
+                class="d-flex flex-column h-100 justify-content-center align-items-center"
+              >
+                <h1 class="fw-bold">Hello!</h1>
+                <p>
+                  My name is Neil Carribine, and I am a full stack developer
+                  based in Folkestone, UK. I specialised in Javascript, and have
+                  a background in illustration and animation which helps me
+                  bring a creative and playful approach to my designs. I use
+                  tools like Figma and the Adobe Creative Suite (Photoshop,
+                  Illustrator, and InDesign) to bring my ideas to life. I
+                  believe that good design is not only functional, but also
+                  visually appealing, and I strive to create work that meets
+                  both of these criteria.
+                </p>
+                <p>
+                  In my free time, I enjoy staying active through activities
+                  like cycling, snowboarding, and walking by the beach. I
+                  believe that a healthy balance between work and personal
+                  interests is key to happiness and productivity.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+              <img src="img/Neil-Carribine.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <div class="py-5 bg-light">
+          <div class="container">
+            <h1 class="pb-5 d-flex justify-content-center fw-bold title">
+              Projects
+            </h1>
+
+            <div class="row row-cols-1 row-cols-sm row-cols-md-3 g-3">
+              <!-- project 1 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div class="bd-placeholder-img card-img-top">
+                    <img src="img/pokemon.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pokedex</h5>
+                    <p class="subtitle">JavaScript - HTML/CSS - API</p>
+                    <p class="card-text">
+                      Pokemon app utilizes an external API to load data and
+                      images of Pokemon. When a Pokemon is clicked, a modal
+                      window appears displaying the Pokemon's height, weight,
+                      and type.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="https://github.com/lamptissue/simple-js-app"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Code
+                        </button>
+                      </a>
+                      <a
+                        href="https://lamptissue.github.io/simple-js-app/"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Demo
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- project 2 -->
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-placeholder-image bd-placeholder-img card-img-top"
+                  >
+                    <img src="img/myflix.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">MyFlix - React</h5>
+                    <p class="subtitle">
+                      React - Bootstrap - Redux - Axios - Parcel - SCSS
+                    </p>
+
+                    <p class="card-text">
+                      Built using the React framework and utilizing the existing
+                      myFlix project API. The app also includes a search
+                      function and provides detailed information about movies,
+                      directors, and genres.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="https://github.com/lamptissue/myFlix-client/tree/test/src/components"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Code
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- project 3 -->
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-placeholder-image bd-placeholder-img card-img-top"
+                  >
+                    <img src="img/meet.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Meet App</h5>
+                    <p class="subtitle">
+                      React - AWS - Javascript - Jest/Enzyme - API
+                    </p>
+
+                    <p class="card-text">
+                      Meet App helps users stay informed about upcoming events
+                      in their desired city. They can choose the number of
+                      events to display and view data for their chosen location.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="https://github.com/lamptissue/meet"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Code
+                        </button>
+                      </a>
+                      <a
+                        href="https://lamptissue.github.io/meet/"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Demo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- project 4 -->
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-placeholder-image bd-placeholder-img card-img-top"
+                  >
+                    <img src="img/chat.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Chat App</h5>
+                    <p class="subtitle">React Native - Firebase - Expo</p>
+
+                    <p class="card-text">
+                      Chat app allows users on both IOS and Android to
+                      communicate with each other through a chat interface.
+                      Users can also share images and their location, as well as
+                      take and send photos directly through the app.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="https://github.com/lamptissue/Chat-App"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Code
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- project 5 -->
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-placeholder-image bd-placeholder-img card-img-top"
+                  >
+                    <img
+                      src="img/flix-angular.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">MyFlix - Angular</h5>
+                    <p class="subtitle">
+                      Angular - Javascript - Typescript - SCSS - TypeDoc
+                    </p>
+                    <p class="card-text">
+                      Built using the Angular framework and utilizing the
+                      existing myFlix movie API to build the client side. This
+                      allows users to access a wide range of movie content and
+                      features within the app.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="https://github.com/lamptissue/myFlix-Angular-client"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Code
+                        </button>
+                      </a>
+                      <a
+                        href="https://lamptissue.github.io/myFlix-Angular-client/"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Demo
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- project 6 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-placeholder-image bd-placeholder-img card-img-top"
+                  >
+                    <img
+                      src="img/portfolio.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Portfolio</h5>
+                    <p class="subtitle">HTML/CSS - Bootstrap - Javascript</p>
+
+                    <p class="card-text">
+                      Portfolio page for an illustrator showcases their work in
+                      a masonry-style display. The page is filled with fun,
+                      quirky features that make it a unique and enjoyable
+                      experience for visitors.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="https://github.com/lamptissue/illustration-portfolio"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Code
+                        </button>
+                      </a>
+                      <a href="http://www.lamptissue.com" target="_blank">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Demo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact p-lg-5 mb-5" id="contact">
+        <div class="container">
+          <h1 class="pb-5 d-flex justify-content-center fw-bold title">
+            Contact
+          </h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="d-flex flex-column h-100 justify-content-center align-items-center"
+              >
+                <h4 class="fw-bold pb-2">Neil Carribine</h4>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                    class="bi bi-geo-alt"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+                    />
+                    <path
+                      d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                    />
+                  </svg>
+                  Folkestone, United Kingdom
+                </p>
+                <h5 class="fw-bold pb-2">Let's connect!</h5>
+                <div class="social-media d-flex justify-content-between">
+                  <a href="https://github.com/lamptissue" target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-github social-1"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      />
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/neilcarribine/"
+                    target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-linkedin social-3"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com/lamptissue" target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-twitter social-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="mailto:ncarribine@gmail.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="social-4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form>
+                <div class="mb-3">
+                  <div class="row g-3 mb-3">
+                    <label>Name</label>
+                    <div class="col">
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        placeholder="First name"
+                        aria-label="First name"
+                        required
+                      />
+                    </div>
+                    <!-- <div class="col">
+                      <input
+                      
+                        type="text"
+                        class="form-control"
+                        placeholder="Last name"
+                        aria-label="Last name"
+                        required
+                      />
+                    </div> -->
+                  </div>
+                  <label for="InputEmail" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    id="InputEmail"
+                    aria-describedby="emailHelp"
+                    required
+                  />
+                </div>
+                <!-- <label for="subject" class="form-label">Subject</label>
+                <input
+                  name="subject"
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  aria-describedby="subject" -->
+                <!-- /> -->
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Your message</label
+                  >
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <input type="submit" />
+                <div>
+                  <p id="result-text"></p>
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
+  </body>
+</html>
