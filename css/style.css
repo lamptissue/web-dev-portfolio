@@ -56,30 +56,71 @@ header div {
   width: 20%;
 }
 
-.active {
-  border-bottom: 2px solid #ffd700;
-  cursor: default;
+.link-header::before {
+  transform-origin: 50% 100%;
+  transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    0 100%,
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
 }
 
-header nav a:hover:not(.active) {
-  animation: menu-bounce 0.4s ease-out;
-  animation-fill-mode: forwards;
+.link-header:hover::before {
+  transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    50% 100%,
+    50% 0,
+    50% 0,
+    50% 100%,
+    50% 100%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
 }
 
-@keyframes menu-bounce {
-  0% {
-    border-bottom: 2px solid rgb(255, 182, 196, 0);
-    padding-bottom: 10px;
-  }
-  100% {
-    border-bottom: 2px solid rgb(255, 182, 196, 1);
-    padding-bottom: 0px;
-  }
+.link-header span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.link-header:hover span {
+  transform: translate3d(0, -2px, 0);
+}
+
+.link {
+  position: relative;
+  white-space: nowrap;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 0.8px;
+  background: pink;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: "";
 }
 
 /* main */
 .about img {
-  width: 500px;
+  max-height: 450px;
   border-top-left-radius: 15%;
   border-top-right-radius: 15%;
   border-bottom-left-radius: 85%;
@@ -115,7 +156,7 @@ header nav a:hover:not(.active) {
 }
 
 .title {
-  text-decoration: underline #ffd700 1.5px;
+  text-decoration: underline #ffd700 2px;
   text-decoration-style: wavy;
 }
 
@@ -139,7 +180,7 @@ header nav a:hover:not(.active) {
   fill: #1da1f2;
 }
 .social-3:hover {
-  fill: rgb(243, 220, 43);
+  fill: #0072b1;
 }
 .social-4:hover {
   fill: rgb(243, 116, 43);
@@ -149,6 +190,13 @@ p {
 }
 svg {
   fill: rgb(0, 0, 0);
+}
+
+footer p {
+  font-size: small;
+}
+footer {
+  margin-left: 20px;
 }
 @media (max-width: 991px) {
   .about {
