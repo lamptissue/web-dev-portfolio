@@ -7,13 +7,19 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.9;
   margin: 0;
 }
 
+h5,
+h4,
+h3 {
+  font-family: "lato", sans-serif;
+}
 /* header */
 header {
   height: 60px;
@@ -121,14 +127,9 @@ header div {
 /* main */
 .about img {
   max-height: 450px;
-  border-top-left-radius: 15%;
-  border-top-right-radius: 15%;
-  border-bottom-left-radius: 85%;
-  border-bottom-right-radius: 15%;
+  border-radius: 3px;
 }
-.about p {
-  text-align: center;
-}
+
 .projects {
   scroll-margin-top: 70px;
 }
@@ -138,6 +139,9 @@ header div {
 }
 .contact {
   scroll-margin-top: 45px;
+}
+.card-text p {
+  font-size: 1px;
 }
 
 .card-placeholder-image {
@@ -164,16 +168,13 @@ header div {
   margin-bottom: 45px;
 }
 
-.projects p {
-  font-size: medium;
-}
 .subtitle {
   font-size: 14px;
   color: gray;
 }
 
 .social-1:hover {
-  fill: rgb(66, 43, 243);
+  fill: rgb(65, 65, 65);
 }
 .social-2:hover {
   fill: #1da1f2;
@@ -184,11 +185,19 @@ header div {
 .social-4:hover {
   fill: rgb(243, 116, 43);
 }
-p {
-  font-size: large;
-}
 svg {
   fill: rgb(0, 0, 0);
+}
+.projects p {
+  font-size: 14px;
+}
+.submit-btn:hover {
+  background-color: #156fa7;
+}
+
+.submit-btn {
+  background-color: #1da1f2;
+  color: white;
 }
 
 footer p {
