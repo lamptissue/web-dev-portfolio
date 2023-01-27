@@ -17,6 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS only -->
     <link
@@ -63,32 +69,23 @@
             About
           </h1>
           <div class="row">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+              <img src="img/Neil-Carribine.png" alt="Neil Carribine" />
+            </div>
             <div class="col-lg-6 col-md-12">
-              <div
-                class="d-flex flex-column h-100 justify-content-center align-items-center"
-              >
+              <div class="d-flex flex-column h-100 justify-content-center">
                 <h1 class="fw-bold">Hello!</h1>
                 <p>
                   My name is Neil Carribine, and I am a full stack developer
-                  based in Folkestone, UK. I specialise in Javascript, and have
-                  a background in illustration and animation which helps me
-                  bring a creative and playful approach to my designs. I use
-                  tools like Figma and the Adobe Creative Suite (Photoshop,
-                  Illustrator, and InDesign) to bring my ideas to life. I
-                  believe that good design is not only functional, but also
-                  visually appealing, and I strive to create work that meets
-                  both of these criteria.
-                </p>
-                <p>
-                  In my free time, I enjoy staying active through activities
-                  like cycling, snowboarding, and walking by the beach. I
-                  believe that a healthy balance between work and personal
-                  interests is key to happiness and productivity.
+                  based in London, UK. I specialise in Javascript, and have a
+                  background in illustration and animation, which helps bring a
+                  creative and playful approach to my designs. I have a good
+                  working knowledge of building both frontend and backend
+                  applications and am keen to build on my experience, delivering
+                  innovative web solutions in either in-house or freelance
+                  roles.
                 </p>
               </div>
-            </div>
-            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
-              <img src="img/Neil-Carribine.png" alt="Neil Carribine" />
             </div>
           </div>
         </div>
@@ -103,10 +100,10 @@
 
             <div class="row row-cols-1 row-cols-sm row-cols-md-3 g-3">
               <!-- project 1 -->
-              <div class="col">
+              <div class="col-lg-4 col-md-6">
                 <div class="card shadow-sm">
                   <div class="bd-placeholder-img card-img-top">
-                    <img src="img/pokemon.png" class="card-img-top" alt="..." />
+                    <img src="img/Layer-2.png" class="card-img-top" alt="..." />
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Pokedex</h5>
@@ -148,12 +145,12 @@
               </div>
               <!-- project 2 -->
 
-              <div class="col">
+              <div class="col-lg-4 col-md-6">
                 <div class="card shadow-sm">
                   <div
                     class="card-placeholder-image bd-placeholder-img card-img-top"
                   >
-                    <img src="img/myflix.png" class="card-img-top" alt="..." />
+                    <img src="img/Layer-6.png" class="card-img-top" alt="..." />
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">MyFlix - React</h5>
@@ -187,12 +184,12 @@
               </div>
               <!-- project 3 -->
 
-              <div class="col">
+              <div class="col-lg-4 col-md-6">
                 <div class="card shadow-sm">
                   <div
                     class="card-placeholder-image bd-placeholder-img card-img-top"
                   >
-                    <img src="img/meet.png" class="card-img-top" alt="..." />
+                    <img src="img/Layer-3.png" class="card-img-top" alt="..." />
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Meet App</h5>
@@ -236,7 +233,7 @@
               </div>
               <!-- project 4 -->
 
-              <div class="col">
+              <div class="col-lg-4 col-md-6">
                 <div class="card shadow-sm">
                   <div
                     class="card-placeholder-image bd-placeholder-img card-img-top"
@@ -273,16 +270,12 @@
               </div>
               <!-- project 5 -->
 
-              <div class="col">
+              <div class="col-lg-4 col-md-6">
                 <div class="card shadow-sm">
                   <div
                     class="card-placeholder-image bd-placeholder-img card-img-top"
                   >
-                    <img
-                      src="img/flix-angular.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
+                    <img src="img/Layer-1.png" class="card-img-top" alt="..." />
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">MyFlix - Angular</h5>
@@ -325,16 +318,12 @@
                 </div>
               </div>
               <!-- project 6 -->
-              <div class="col">
+              <div class="col-lg-4 col-md-6">
                 <div class="card shadow-sm">
                   <div
                     class="card-placeholder-image bd-placeholder-img card-img-top"
                   >
-                    <img
-                      src="img/portfolio.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
+                    <img src="img/Layer-4.png" class="card-img-top" alt="..." />
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Portfolio</h5>
@@ -471,14 +460,15 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-lg-6">
-               <form>
+            <!-- Contact form-->
+            <div class="col-lg-6">
+              <form>
                 <div class="mb-3">
                   <div class="row g-3 mb-3">
                     <label>Name</label>
                     <div class="col">
                       <input
-                        name="name"
+                        name="firstName"
                         type="text"
                         class="form-control"
                         placeholder="First name"
@@ -488,7 +478,7 @@
                     </div>
                     <div class="col">
                       <input
-                      
+                        name="lastName"
                         type="text"
                         class="form-control"
                         placeholder="Last name"
@@ -518,24 +508,25 @@
                   aria-describedby="subject"
                 />
                 <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
+                  <label for="messageArea" class="form-label"
                     >Your message</label
                   >
                   <textarea
                     name="message"
                     class="form-control"
-                    id="exampleFormControlTextarea1"
+                    id="messageArea"
                     rows="3"
                     required
                   ></textarea>
                 </div>
-                <input type="submit" />
                 <div>
                   <p id="result-text"></p>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-outline-primary">
+                  Submit
+                </button>
               </form>
-            </div> -->
+            </div>
           </div>
         </div>
       </section>
@@ -550,7 +541,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="js/app.js"></script>
+    <script src="index.js"></script>
     <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>
