@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Neil Carribine Portfoilo</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/date.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="fixed-top">
+      <div class="header-title">
+        <h3>
+          <a aria-label="Home" href="index.html" class="fw-bold"
+            >Neil Carribine</a
+          >
+        </h3>
+      </div>
+      <nav>
+        <a
+          aria-label="Link to About Section"
+          href="#about"
+          class="link link-header"
+        >
+          <span>About</span>
+        </a>
+        <a
+          aria-label="Link to Projects section"
+          href="#projects"
+          class="link link-header"
+        >
+          <span>Projects</span>
+        </a>
+        <a
+          aria-label="Link to Contact section"
+          href="#contact"
+          class="link link-header"
+        >
+          <span>Contact</span>
+        </a>
+      </nav>
+    </header>
+    <!-- Main -->
+    <!-- About -->
+    <main class="mt-4">
+      <section class="casestudy p-lg-5 mb-5">
+        <p class="fw-bold"><a href="index.html">&larr; back</a></p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <h1>Chat App</h1>
+              <p class="subtitle">React Native - Firebase - Expo</p>
+
+              <p class="w-50">
+                Chat App is a mobile app that is built using React Native. It
+                allows users both on IOS and Android to communicate with each
+                other through a chat interface. Users can also share images and
+                their location, as well as take and send photos directly through
+                the app.
+              </p>
+              <div class="case-img p-2">
+                <img
+                  src="img/chat.png"
+                  alt="Chat App preview"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row case-content d-flex align-items-center">
+            <div class="col-lg-8">
+              <h4>Objective</h4>
+              <p>
+                The aim was to build an app that would work on both IOS and
+                Android devices and make use of features on both types of
+                devices. The problem I was trying to solve was to create an
+                application without having to use other languages such as Swift
+                or Java.
+              </p>
+              <h4>Approach</h4>
+              <p>
+                I built a Chat App using React Native, Expo, and Firebase. My
+                previous experience with HTML, CSS, and React proved to be very
+                helpful in this project. The project began with learning about
+                basic layout and styling by creating a 'hello world' app and
+                experimenting with different colours and layouts.
+              </p>
+
+              <p>
+                The next steps were to build a second screen that would
+                eventually serve as the chat feature. To accomplish this, I
+                broke the project down into smaller pieces so that each
+                component could be implemented and tested individually.
+              </p>
+
+              <p>
+                One of the first components I built was a start screen that
+                prompts the user to enter their name and allows them to change
+                the background colour. I started by implementing a basic chat
+                interface using Gift and then integrated Firebase to store
+                messages. I tested the chat interface using an emulator and my
+                device to ensure that it was working correctly and that the
+                conversation was being stored in Firebase as expected. In the
+                final stage, I added additional features such as the ability to
+                add photos and share location, making use of the device's native
+                features such as the camera.
+              </p>
+              <h4>Problems</h4>
+              <p>
+                During the development process, I encountered a few challenges
+                that required troubleshooting and problem-solving. For example,
+                the app continued to crash, which was caused by incorrect code.
+                To resolve this, I had to debug using the prompts provided in
+                the terminal. Additionally, I encountered issues with outdated
+                code in the examples I was using, which I was able to overcome
+                by consulting the Expo documentation to find the latest methods.
+                Despite these challenges, I was able to successfully navigate
+                and overcome them, producing a working application that is now
+                included in my portfolio.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="img/chat-case1.png"
+                alt="Example of the Chat App working with messages"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+    </main>
+    <footer>
+      <p>All content © Neil Carribine <span class="yearDate"></span></p>
+    </footer>
+
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
+  </body>
+</html>
