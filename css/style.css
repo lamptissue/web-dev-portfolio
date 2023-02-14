@@ -173,7 +173,7 @@ header div {
 
 .subtitle {
   font-size: 14px;
-  color: gray;
+  color: #767676;
 }
 
 .social-1:hover {
@@ -208,6 +208,12 @@ footer p {
 }
 footer {
   margin-left: 20px;
+}
+.casestudy h1 {
+  text-align: left;
+}
+.case-content {
+  padding-top: 100px;
 }
 
 @media (max-width: 991px) {
