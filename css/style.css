@@ -34,6 +34,7 @@ header {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 header nav a {
   text-decoration: none;
@@ -165,12 +166,14 @@ header div {
 
 .social-media a {
   margin-right: 15px;
-  margin-bottom: 45px;
+}
+.social-media {
+  margin-bottom: 25px;
 }
 
 .subtitle {
   font-size: 14px;
-  color: gray;
+  color: #767676;
 }
 
 .social-1:hover {
@@ -206,6 +209,13 @@ footer p {
 footer {
   margin-left: 20px;
 }
+.casestudy h1 {
+  text-align: left;
+}
+.case-content {
+  padding-top: 100px;
+}
+
 @media (max-width: 991px) {
   .about {
     margin-top: 60px;
