@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Inter Variable;
+  font-weight: 400;
+  src: url(../Inter.var.woff2);
+}
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
@@ -7,12 +12,62 @@
 }
 
 body {
-  /* font-family: "Lato", sans-serif; */
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.9;
   margin: 0;
+  cursor: none;
+}
+a {
+  cursor: none;
+}
+div.cursors div {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(250, 71, 71);
+  border-radius: 50%;
+
+  z-index: 1031;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+div.cursors div a:hover {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(71, 250, 122);
+  border-radius: 50%;
+  cursor: none;
+
+  z-index: 1031;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+div.cursors div span {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 300px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: rgb(250, 71, 71);
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+div.cursors div span.visibile {
+  opacity: 1;
 }
 
 h5,
@@ -20,6 +75,31 @@ h4,
 h3 {
   font-family: "lato", sans-serif;
 }
+@keyframes animate-type {
+  0% {
+    font-variation-settings: "wght" 400, "slnt" 0;
+    letter-spacing: 0;
+  }
+  40% {
+    font-variation-settings: "wght" 400, "slnt" 0;
+    letter-spacing: 0;
+  }
+  60% {
+    font-variation-settings: "wght" 400, "slnt" 0;
+    letter-spacing: 0;
+  }
+  100% {
+    font-variation-settings: "wght" 900, "slnt" -8;
+    letter-spacing: 3px;
+  }
+}
+
+.test {
+  font-family: Inter Variable;
+  line-height: 1;
+  animation: animate-type 5s infinite alternate;
+}
+
 /* header */
 header {
   height: 60px;
@@ -66,34 +146,12 @@ header div {
 .link-header::before {
   transform-origin: 50% 100%;
   transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
-  clip-path: polygon(
-    0% 0%,
-    0% 100%,
-    0 100%,
-    0 0,
-    100% 0,
-    100% 100%,
-    0 100%,
-    0 100%,
-    100% 100%,
-    100% 0%
-  );
+  clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
 }
 
 .link-header:hover::before {
   transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
-  clip-path: polygon(
-    0% 0%,
-    0% 100%,
-    50% 100%,
-    50% 0,
-    50% 0,
-    50% 100%,
-    50% 100%,
-    0 100%,
-    100% 100%,
-    100% 0%
-  );
+  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
 }
 
 .link-header span {
@@ -162,6 +220,7 @@ header div {
 .title {
   text-decoration: underline #ffd700 2px;
   text-decoration-style: wavy;
+  text-underline-offset: 12px;
 }
 
 .social-media a {
@@ -213,12 +272,101 @@ footer {
   text-align: left;
 }
 .case-content {
-  padding-top: 100px;
+  padding-top: 50px;
+}
+.case-button a {
+  margin-right: 10px;
+}
+
+ul {
+  list-style: square;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+li {
+  width: 30%;
+}
+div.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#ffe864, #ffea76);
+  transition: opacity 1s;
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.test1 {
+  overflow-y: hidden;
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  height: 90px;
+  padding-top: 20px;
+  position: relative;
+}
+.test1 h1 {
+  position: relative;
+  margin: 0;
+  font-size: 75px;
+  font-weight: bold;
+  opacity: 1;
+  bottom: -100px;
+  color: #333333;
+}
+
+.test1 h1.show {
+  opacity: 1;
+  animation: test 0.8s forwards;
+}
+.test1 h1:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.test1 h1:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.test1 h1:nth-child(3) {
+  animation-delay: 1s;
+}
+.test1 h1:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes test {
+  0% {
+    bottom: -100px;
+  }
+  50% {
+    bottom: 25px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+.w-60 {
+  width: 60%;
 }
 
 @media (max-width: 991px) {
   .about {
     margin-top: 60px;
+    height: auto;
   }
   .contact {
     scroll-margin-top: 90px;
@@ -231,7 +379,7 @@ footer {
     width: auto;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 805px) {
   header {
     display: flex;
     flex-wrap: wrap;
@@ -255,6 +403,9 @@ footer {
     margin-top: 100px;
     height: auto;
     scroll-margin-top: 100px;
+  }
+  .about img {
+    margin-bottom: 30px;
   }
   .contact {
     scroll-margin-top: 100px;
