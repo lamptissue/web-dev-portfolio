@@ -1,8 +1,10 @@
 export function handleCustomCursor() {
+  console.log("hiya");
   const cursor = document.querySelector("div.cursors");
   const ball = cursor.querySelectorAll("div");
   const links = document.querySelectorAll("a");
   const form = document.getElementById("contact-form");
+  const isHomePage = window.location.pathname === "/"; // Adjust the path if your home page has a different URL
 
   let aimX = 0;
   let aimY = 0;
@@ -24,22 +26,42 @@ export function handleCustomCursor() {
     animate();
   });
 
-  form.addEventListener("mouseover", function () {
-    document.body.style.cursor = "auto";
-    ball.forEach((ball) => {
-      ball.style.backgroundColor = "transparent";
-    });
-  });
+  if (!isHomePage) {
+    const video = document.querySelector("iframe");
+    video.addEventListener("mouseover", function () {
+      document.body.style.cursor = "none";
 
-  form.addEventListener("mouseout", function () {
-    document.body.style.cursor = "none";
-    ball.forEach((ball) => {
-      ball.style.backgroundColor = "rgb(250, 71, 71)";
+      ball.forEach((ball) => {
+        ball.style.backgroundColor = "transparent";
+      });
     });
-  });
+
+    video.addEventListener("mouseout", function () {
+      ball.forEach((ball) => {
+        ball.style.backgroundColor = "rgb(250, 71, 71)";
+      });
+    });
+  }
+
+  if (isHomePage) {
+    form.addEventListener("mouseover", function () {
+      document.body.style.cursor = "auto";
+      ball.forEach((ball) => {
+        ball.style.backgroundColor = "transparent";
+      });
+    });
+
+    form.addEventListener("mouseout", function () {
+      document.body.style.cursor = "none";
+      ball.forEach((ball) => {
+        ball.style.backgroundColor = "rgb(250, 71, 71)";
+      });
+    });
+  }
+
   document.addEventListener("mousemove", function (event) {
-    aimX = event.pageX;
-    aimY = event.pageY;
+    aimX = event.clientX;
+    aimY = event.clientY;
   });
 
   links.forEach((link) => {
