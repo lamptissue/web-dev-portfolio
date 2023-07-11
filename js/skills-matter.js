@@ -21,7 +21,9 @@ export function skillsMatter() {
     element: skills,
     engine: engine,
     options: {
-      background: "#d8f9ff",
+      // background: "#d8f9ff",
+      // background: "#ffdde2",
+      background: "#f5f5f5",
       wireframes: false,
       pixelRatio: window.devicePixelRatio,
       width: w,
@@ -40,7 +42,7 @@ export function skillsMatter() {
 
   //Delete these later
 
-  const html = Bodies.rectangle(40, 150, 62, 70, {
+  const html = Bodies.rectangle(40, 150, 75, 85, {
     render: {
       sprite: {
         texture: "../logos/html.png",
@@ -48,7 +50,7 @@ export function skillsMatter() {
     },
   });
 
-  const wordpress = Bodies.circle(400, 200, 35, {
+  const wordpress = Bodies.circle(400, 200, 42, {
     render: {
       sprite: {
         texture: "../logos/wordpress.png",
@@ -56,7 +58,7 @@ export function skillsMatter() {
     },
   });
 
-  const css = Bodies.rectangle(400, 200, 63, 70, {
+  const css = Bodies.rectangle(400, 200, 75, 85, {
     render: {
       sprite: {
         texture: "../logos/css.png",
@@ -64,7 +66,7 @@ export function skillsMatter() {
     },
   });
 
-  const bootstrap = Bodies.rectangle(400, 200, 70, 56, {
+  const bootstrap = Bodies.rectangle(400, 200, 80, 68, {
     render: {
       sprite: {
         texture: "../logos/bootstrap.png",
@@ -72,7 +74,7 @@ export function skillsMatter() {
     },
   });
 
-  const figma = Bodies.rectangle(400, 20, 47, 70, {
+  const figma = Bodies.rectangle(400, 20, 57, 85, {
     render: {
       sprite: {
         texture: "../logos/figma.png",
@@ -80,7 +82,7 @@ export function skillsMatter() {
     },
   });
 
-  const javascript = Bodies.rectangle(300, 20, 70, 70, {
+  const javascript = Bodies.rectangle(300, 20, 80, 80, {
     render: {
       sprite: {
         texture: "../logos/javascript.png",
@@ -88,7 +90,7 @@ export function skillsMatter() {
     },
   });
 
-  const node = Bodies.rectangle(400, 200, 62, 70, {
+  const node = Bodies.rectangle(400, 200, 75, 85, {
     render: {
       sprite: {
         texture: "../logos/node.png",
@@ -96,7 +98,7 @@ export function skillsMatter() {
     },
   });
 
-  const adobe = Bodies.rectangle(400, 200, 70, 64, {
+  const adobe = Bodies.rectangle(400, 200, 85, 77, {
     render: {
       sprite: {
         texture: "../logos/adobe.png",
@@ -104,7 +106,7 @@ export function skillsMatter() {
     },
   });
 
-  const react = Bodies.circle(450, 300, 30, {
+  const react = Bodies.circle(450, 300, 36, {
     frictionAir: 0.1,
     render: {
       sprite: {
@@ -113,7 +115,7 @@ export function skillsMatter() {
     },
   });
 
-  const mongo = Bodies.rectangle(400, 200, 45, 100, {
+  const mongo = Bodies.rectangle(400, 200, 38, 85, {
     render: {
       sprite: {
         texture: "../logos/mongo.png",

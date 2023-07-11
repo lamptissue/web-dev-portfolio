@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Neil Carribine Portfoilo</title>
+    <title>Neil Carribine Portfolio</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -56,47 +56,47 @@
         </h3>
       </div>
       <nav>
-        <a aria-label="Link to About Section" href="#about" class="link link-header">
+        <a aria-label="Link to About Section" href="/#about" class="link link-header">
           <span>About</span>
         </a>
-        <a aria-label="Link to Projects section" href="#projects" class="link link-header">
+        <a aria-label="Link to Projects section" href="/#projects" class="link link-header">
           <span>Projects</span>
         </a>
-        <a aria-label="Link to Contact section" href="#contact" class="link link-header">
+        <a aria-label="Link to Contact section" href="/#contact" class="link link-header">
           <span>Contact</span>
         </a>
       </nav>
     </header>
 
+    <!-- Main -->
+
     <main class="mt-4">
-      <section class="casestudy p-lg-5 mb-5">
+      <section class="casestudy p-lg-5 mb-3">
         <p class="fw-bold"><a href="/">&larr; back</a></p>
-        <div class="container">
+        <div class="container casestudy-top">
           <div class="row">
-            <div class="col-lg">
+            <div class="col-lg-5 d-flex justify-content-around flex-column">
               <h1>Alex Jeffrey Clock Company</h1>
-
-              <div class="case-button py-2">
-                <a href="https://github.com/lamptissue/alexjeffrey" target="_blank">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
-                </a>
-                <a
-                  href="https://www.figma.com/file/bRELknmRwMkAPFrjvFFQwb/alexjamescraftworks?node-id=0%3A1&t=iKX8smxVY4bGceX4-1"
-                  target="_blank"
-                >
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Figma</button>
-                </a>
-                <a href="http://www.alexjeffreyclockcompany.com/" target="_blank">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Website</button>
-                </a>
-              </div>
-              <p class="subtitle">HTML/CSS - WordPress - JavaScript - PHP - Figma</p>
-
-              <p class="w-60 mt-3">
+              <p>
                 Alex Jeffrey, a clockmaker known for notable projects like the Big Ben restoration, needed a website.
                 The goal was to highlight his work and allow him to independently update it. The result is a
                 mobile-responsive site showcasing his projects and ensuring easy updates on the go.
               </p>
+              <div class="d-flex">
+                <a href="https://github.com/lamptissue/alexjeffrey" target="_blank"
+                  ><button class="case-study-button">Code</button></a
+                >
+                <a
+                  href="https://www.figma.com/file/bRELknmRwMkAPFrjvFFQwb/alexjamescraftworks?node-id=0%3A1&t=iKX8smxVY4bGceX4-1"
+                  target="_blank"
+                  ><button class="case-study-button">Figma</button></a
+                >
+                <a href="http://www.alexjeffreyclockcompany.com/" target="_blank"
+                  ><button class="case-study-button">Website</button></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-7">
               <div class="video p-2">
                 <iframe
                   src="https://player.vimeo.com/video/823019408?h=e69d67b067&autoplay=1&loop=1"
@@ -109,15 +109,46 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="row case-content d-flex align-items-center">
-            <div class="col-lg-7 col-md-12">
-              <h4>Objective</h4>
+      <div class="tools-test px-5">
+        <div class="tool-item">
+          <img src="img/js-square.svg" />
+          <p>JavaScript</p>
+        </div>
+        <div class="tool-item">
+          <img src="img/php-square.svg" />
+          <p>PHP</p>
+        </div>
+        <div class="tool-item">
+          <img src="img/html-square.svg" />
+          <p>HTML</p>
+        </div>
+        <div class="tool-item">
+          <img src="img/css-square.svg" />
+          <p>CSS</p>
+        </div>
+        <div class="tool-item">
+          <img src="img/figma-square.svg" />
+          <p>Figma</p>
+        </div>
+        <div class="tool-item">
+          <img src="img/wordpress-square.svg" />
+          <p>WordPress</p>
+        </div>
+      </div>
+
+      <section class="casestudy p-5 mb-5">
+        <div class="container">
+          <div class="row mb-5 d-flex justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <h2>Objective</h2>
               <p>
                 The aim of this project was to create a website that not only exhibits Alex's work but also provides him
                 with the capability to independently update content and images.
               </p>
-              <h4>Approach</h4>
+              <h2>Approach</h2>
               <p>
                 The first step in the process was understanding Alex's specific needs for his website. Looking at Alex's
                 work it was clear that he has an impressive portoflio and it was important to showcase this. I suggested
@@ -131,43 +162,50 @@
                 prominently displayed on the homepage.
               </p>
             </div>
-            <div class="d-flex align-items-center justify-content-center col-lg-5">
-              <img src="img/alex-jeffrey-1.png" class="img-fluid rounded py-3" />
-            </div>
-            <div class="row">
-              <div class="col-lg">
-                <p>
-                  The choice to use WordPress as a platform was crucial to the project's success. It provided Alex with
-                  the flexibility to update his website as needed. Utilising plugins such as Advanced Custom Fields
-                  (ACF) for specific purposes and WP-Forms allowed visitors to easily submit requests, streamlining
-                  interactions and making the website more user-friendly. I used WordPress's posts feature to create
-                  individual case studies and using through PHP loops which would populate the case studies page
-                  dynamically.This approach eliminated the need for hardcoding each entry, ensuring that any new case
-                  studies would be automatically added into the page.
-                </p>
-                <div class="d-flex align-items-center justify-content-center p-3">
-                  <img src="img/home-layout.png" class="img-fluid rounded" />
-                </div>
-                <p class="subtitle">Progress made from the original design to the final</p>
-              </div>
-            </div>
+            <div class="col-lg-6"><img src="img/figma-alex.png" class="img-fluid rounded" /></div>
+          </div>
 
-            <div class="row d-flex align-items-center">
-              <div class="col-lg">
-                <h4>Learnings</h4>
-                <p>
-                  Throughout the project, I had the opportunity to enhance my technical skills. My experience with
-                  JavaScript made it easier for me to understand PHP loops which was important using WordPress posts
-                  efficently. Additionally, I deepened my understanding of web components, further expanding my
-                  capabilities in website development.
-                </p>
-              </div>
+          <div class="row mb-5 d-flex justify-content-center align-items-center">
+            <div class="col-lg-6"><img src="img/alex-website.gif" class="img-fluid" /></div>
+            <div class="col-lg-6">
+              <p>
+                The choice to use WordPress as a platform was crucial to the project's success. It provided Alex with
+                the flexibility to update his website as needed. Utilising plugins such as Advanced Custom Fields (ACF)
+                for specific purposes and WP-Forms allowed visitors to easily submit requests, streamlining interactions
+                and making the website more user-friendly. I used WordPress's posts feature to create individual case
+                studies and using through PHP loops which would populate the case studies page dynamically.This approach
+                eliminated the need for hardcoding each entry, ensuring that any new case studies would be automatically
+                added into the page.
+              </p>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg screenshots"><img src="img/home-alex.png" class="img-flud" /></div>
+
+            <p class="subtitle">Progress made from the original design to the final</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 d-flex justify-content-around flex-column">
+              <h2>Key learnings</h2>
+              <p>
+                Throughout the project, I had the opportunity to enhance my technical skills. My experience with
+                JavaScript made it easier for me to understand PHP loops which was important using WordPress posts
+                efficently. Additionally, I deepened my understanding of web components, further expanding my
+                capabilities in website development.
+              </p>
+              <p class="fw-bold">Wanna find out more eh?</p>
+              <a href="/#contact"><button class="case-study-button">Get in touch!</button></a>
+            </div>
+            <div class="col-lg-6 key-learnings">
+              <img
+                src="https://res.cloudinary.com/lamptissue/image/upload/v1688915982/infoimage_tvvrvj.png"
+                class="img-flud"
+              />
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Projects -->
     </main>
     <footer>
       <p>All content © Neil Carribine <span class="yearDate"></span></p>

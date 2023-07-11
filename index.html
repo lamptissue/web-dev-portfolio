@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Neil Carribine Portfoilo</title>
+    <title>Neil Carribine Portfolio</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -81,13 +81,13 @@
         </h3>
       </div>
       <nav>
-        <a aria-label="Link to About Section" href="#about" class="link link-header">
+        <a aria-label="Link to About Section" href="/#about" class="link link-header">
           <span>About</span>
         </a>
-        <a aria-label="Link to Projects section" href="#projects" class="link link-header">
+        <a aria-label="Link to Projects section" href="/#projects" class="link link-header">
           <span>Projects</span>
         </a>
-        <a aria-label="Link to Contact section" href="#contact" class="link link-header">
+        <a aria-label="Link to Contact section" href="/#contact" class="link link-header">
           <span>Contact</span>
         </a>
       </nav>
@@ -97,29 +97,31 @@
 
     <!-- About -->
     <main class="mt-4">
-      <section class="about p-lg-5 mb-4" id="about">
+      <section class="about p-lg-5" id="about">
         <div class="container h-100">
           <h1 class="pb-5 d-flex justify-content-center fw-bold title">About</h1>
           <div class="row">
-            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
-              <!-- TODO:Update class names -->
+            <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
               <div class="background-test">
-                <h1>Add text or image</h1>
+                <img src="img/perfect-fit.png" />
                 <div class="image">
                   <img src="img/Neil-Carribine.png" alt="Neil Carribine" />
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-sm-12">
               <div class="d-flex flex-column h-100 justify-content-center">
-                <h1 class="fw-bold">Hello!</h1>
+                <h1 class="fw-bold mb-4">Hello!</h1>
+
                 <p>
                   My name is Neil Carribine, and I am a full stack developer based in London, UK. I specialise in
                   Javascript, and have a background in illustration and animation, which helps bring a creative and
                   playful approach to my designs. I have a good working knowledge of building both frontend and backend
-                  applications and am keen to build on my experience, delivering innovative web solutions in either
-                  in-house or freelance roles.
+                  applications.
                 </p>
+                <a href="files/Neil_Carribine_Web_Developer_CV.pdf" class="button pt-2" download title="Download my CV"
+                  ><button class="case-study-button" type="button" aria-label="Download CV">Download CV</button></a
+                >
               </div>
             </div>
           </div>
@@ -128,12 +130,13 @@
 
       <!-- Skills -->
       <section class="skill">
-        <div class="skills pb-5 container">
+        <div class="skills pb-3 container">
           <div>
             <h1 class="pb-5 d-flex justify-content-center fw-bold title">Skills</h1>
-            <!-- TODO: add paragraph and sort out listing -->
-            <p>*Add paragraph here*</p>
-            <ul>
+            <p class="skills-list">
+              Check out some of the technologies and languages that are currently floating around my head.
+            </p>
+            <ul class="skills-list">
               <li>HTML5</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -148,72 +151,80 @@
           <div><div class="skills-matter"></div></div>
         </div>
       </section>
-      <!-- Updated projects -->
+
+      <!-- Projects -->
       <section class="projects" id="projects">
         <div class="container py-5 d-flex justify-content-center align-items-center flex-column">
           <h1 class="pb-5 fw-bold title">Projects</h1>
           <div class="row gx-5">
             <!-- Project 1 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center project-padding">
               <div class="project-template">
-                <div class="project-image bg1">
-                  <a href="alex-jeffrey-casestudy.html">
-                    <img src="img/alex-jeffrey.png" class="card-img-top" alt="..." />
-                  </a>
-                </div>
+                <a href="alex-jeffrey-casestudy.html">
+                  <div class="project-image bg1">
+                    <img src="img/alex-jeffrey-index.png" alt="Preview of Alex Jeffrey Clock Company" />
+                  </div>
+                </a>
+
                 <div class="project-text">
                   <div class="d-flex justify-content-between align-items-center">
                     <a href="alex-jeffrey-casestudy.html">
                       <h5 class="fw-bold">Alex Jeffrey Clock Company</h5>
                     </a>
                     <a href="http://www.alexjeffreyclockcompany.com/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Website</button>
+                      <img src="img/internet.png" class="internet" />
                     </a>
                   </div>
 
-                  <p>subtitle</p>
+                  <p>Portfolio website for clock maker Alex Jeffrey</p>
                 </div>
               </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center project-padding">
               <div class="project-template">
-                <div class="project-image bg2">
-                  <a href="case-study1.html">
-                    <img src="img/alex-jeffrey.png" class="card-img-top" alt="..." />
-                  </a>
-                </div>
+                <a href="film-finder-casestudy.html">
+                  <div class="project-image bg3">
+                    <img src="img/film-finder.png" alt="Preview of the Film Finder website" />
+                  </div>
+                </a>
+
                 <div class="project-text">
                   <div class="d-flex justify-content-between align-items-center">
-                    <a href="case-study1.html"> <h5 class="fw-bold">Pokedex</h5></a>
-
-                    <a href="https://lamptissue.github.io/simple-js-app/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
+                    <a href="film-finder-casestudy.html">
+                      <h5 class="fw-bold">Film Finder</h5>
+                    </a>
+                    <a href="https://film-finder-react.netlify.app/" target="_blank">
+                      <img src="img/internet.png" class="internet" />
                     </a>
                   </div>
-                  <p>subtitle</p>
+
+                  <p>Find information about your favourite films</p>
                 </div>
               </div>
             </div>
-
             <!-- Project 3 -->
-            <div class="col-lg-4">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center project-padding">
               <div class="project-template">
-                <div class="project-image bg3">
-                  <a href="case-study2.html">
-                    <img src="img/alex-jeffrey.png" class="card-img-top" alt="..." />
-                  </a>
-                </div>
+                <a href="pokedex-casestudy.html">
+                  <div class="project-image bg2">
+                    <img src="img/pokedex.png" alt="Preview of the Pokedex website" />
+                  </div>
+                </a>
+
                 <div class="project-text">
                   <div class="d-flex justify-content-between align-items-center">
-                    <a href="case-study2.html"> <h5 class="fw-bold">MyFlix - React</h5></a>
-
-                    <a href="https://silver-sunflower-f6a866.netlify.app/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
+                    <a href="pokedex-casestudy.html">
+                      <h5 class="fw-bold">Pokedex</h5>
+                    </a>
+                    <a href="https://lamptissue.github.io/simple-js-app/" target="_blank">
+                      <img src="img/internet.png" class="internet" />
                     </a>
                   </div>
-                  <p>subtitle</p>
+
+                  <p>An app displaying all 150 original Pokémon</p>
                 </div>
               </div>
             </div>
@@ -228,7 +239,10 @@
           <div class="row">
             <div class="col-lg">
               <div class="d-flex flex-column h-100 justify-content-center align-items-center pb-5">
-                <h4 class="fw-bold pb-2">Neil Carribine</h4>
+                <div class="cartoon-place">
+                  <img src="img/testimage.png" class="img-fluid" />
+                </div>
+                <h4 class="fw-bold pb-2 pt-4">Neil Carribine</h4>
                 <p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -245,6 +259,7 @@
                   </svg>
                   London, United Kingdom
                 </p>
+
                 <h5 class="fw-bold pb-2">Let's connect!</h5>
                 <div class="social-media d-flex justify-content-between">
                   <a href="https://github.com/lamptissue" aria-label="Link to Github page" target="_blank"
@@ -309,11 +324,6 @@
                     </svg>
                   </a>
                 </div>
-                <a href="files/Neil_Carribine_Web_Dev_CV.pdf" class="button" download title="Download my CV"
-                  ><button class="btn btn-outline-primary btn-sm" type="button" aria-label="Download CV">
-                    Download CV
-                  </button></a
-                >
               </div>
             </div>
 
@@ -363,7 +373,7 @@
                 <div>
                   <p id="result-text"></p>
                 </div>
-                <button type="submit" class="btn btn-outline-primary">Submit</button>
+                <button type="submit" class="case-study-button form-button">Submit</button>
               </form>
             </div>
           </div>
