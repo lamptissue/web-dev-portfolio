@@ -1,5 +1,5 @@
 export function pageLoad() {
-  const text = document.querySelectorAll(".test1 h1");
+  const text = document.querySelectorAll(".loading-text h1");
   const loading = document.querySelector(".loading");
   const cursor = document.querySelector("div.cursors");
 
@@ -8,8 +8,8 @@ export function pageLoad() {
   header.style.zIndex = "0";
   cursor.style.display = "none";
 
-  text.forEach((test) => {
-    test.classList.add("show");
+  text.forEach((text) => {
+    text.classList.add("show");
     setTimeout(() => {
       loading.classList.add("hidden");
       cursor.style.display = "block";
