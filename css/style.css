@@ -114,52 +114,61 @@ a {
 a button.btn {
   cursor: none !important;
 }
-div.cursors div {
-  position: fixed;
-  top: 200px;
-  left: 200px;
-  width: 10px;
-  height: 10px;
-  background-color: rgb(250, 71, 71);
-  border-radius: 50%;
 
-  z-index: 1031;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
+@media (min-width: 1000px) {
+  div.cursors div {
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(250, 71, 71);
+    border-radius: 50%;
+
+    z-index: 1031;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+
+  div.cursors div a:hover {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(71, 250, 122);
+    border-radius: 50%;
+    cursor: none;
+
+    z-index: 1031;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+
+  div.cursors div span {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 300px;
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(250, 71, 71);
+
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  div.cursors div span.visibile {
+    opacity: 1;
+  }
 }
 
-div.cursors div a:hover {
-  position: absolute;
-  top: 300px;
-  left: 300px;
-  width: 10px;
-  height: 10px;
-  background-color: rgb(71, 250, 122);
-  border-radius: 50%;
-  cursor: none;
-
-  z-index: 1031;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
-
-div.cursors div span {
-  position: absolute;
-  top: 0;
-  left: 40px;
-  width: 300px;
-
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 32px;
-  color: rgb(250, 71, 71);
-
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-div.cursors div span.visibile {
-  opacity: 1;
+@media (max-width: 999px) {
+  body {
+    cursor: auto;
+  }
 }
 
 h5,
@@ -569,6 +578,7 @@ canvas {
 .screenshots img {
   max-height: 100%;
   width: 1000px;
+  min-width: 200px;
   border-radius: 5px;
 }
 
@@ -681,6 +691,7 @@ canvas {
   border: 2px solid black;
   border-radius: 25px;
   text-align: center;
+  color: black;
   background-color: white;
   margin-right: 10px;
   cursor: none !important;
@@ -777,6 +788,6 @@ canvas {
     scroll-margin-top: 100px;
   }
   .casestudy-top {
-    margin-top: 90px;
+    margin-top: 100px;
   }
 }

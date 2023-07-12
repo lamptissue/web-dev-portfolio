@@ -25,24 +25,6 @@ export function handleCustomCursor() {
 
     animate();
   });
-
-  // if (!isHomePage) {
-  //   const video = document.querySelector("iframe");
-  //   video.addEventListener("mouseover", function () {
-  //     document.body.style.cursor = "none";
-
-  //     ball.forEach((ball) => {
-  //       ball.style.backgroundColor = "transparent";
-  //     });
-  //   });
-
-  //   video.addEventListener("mouseout", function () {
-  //     ball.forEach((ball) => {
-  //       ball.style.backgroundColor = "rgb(250, 71, 71)";
-  //     });
-  //   });
-  // }
-
   if (isHomePage) {
     form.addEventListener("mouseover", function () {
       document.body.style.cursor = "auto";
