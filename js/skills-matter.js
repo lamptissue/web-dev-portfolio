@@ -137,14 +137,35 @@ export function skillsMatter() {
   //     render: { fillStyle: "blue" },
   //   });
 
-  let bigHead = Bodies.circle(w / 2, h / 2, 75, {
-    isStatic: true,
-    render: {
-      sprite: {
-        texture: "../logos/bigHead.png",
+  // let bigHead = Bodies.circle(w / 2, h / 2, 75, {
+  //   isStatic: true,
+  //   render: {
+  //     sprite: {
+  //       texture: "../logos/bigHead.png",
+  //     },
+  //   },
+  // });
+
+  let bigHead;
+  if (window.innerWidth > 900) {
+    bigHead = Bodies.circle(w / 2, h / 2, 75, {
+      isStatic: true,
+      render: {
+        sprite: {
+          texture: "../logos/bigHead.png",
+        },
       },
-    },
-  });
+    });
+  } else {
+    bigHead = Bodies.circle(w / 2, h / 2, 40, {
+      isStatic: true,
+      render: {
+        sprite: {
+          texture: "../logos/bigHead-mobile.png",
+        },
+      },
+    });
+  }
 
   // const getRandomShape = function (x, y) {
   //   const shapes = [

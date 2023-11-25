@@ -33,8 +33,28 @@ section {
 
 .projects {
   background-color: #fafafa;
-  height: 90vh;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  /* height: 90vh; */
 }
+
+.project-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* flex-direction: row; */
+}
+@media (max-width: 1060px) {
+  .project-container {
+    flex-direction: column;
+  }
+  .project-template {
+    margin-bottom: 30px;
+  }
+}
+
 .project-template {
   background-color: #156fa7;
   width: 440px;
@@ -67,7 +87,25 @@ section {
   transition: 0.3s;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1325px) {
+  .project-image {
+    width: 400px;
+    height: 270px;
+  }
+  .project-template {
+    width: 400px;
+    height: 350px;
+  }
+  .project-text {
+    width: 400px;
+    height: 80px;
+  }
+  .projects {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
   .project-image {
     width: 350px;
     height: 270px;
@@ -79,11 +117,6 @@ section {
   .project-text {
     width: 350px;
     height: 80px;
-  }
-  .projects .container {
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 1100px;
   }
   .projects {
     height: 100%;
@@ -105,14 +138,6 @@ section {
 
 .project-image:hover img {
   max-width: 98%;
-}
-
-a {
-  cursor: none;
-}
-
-a button.btn {
-  cursor: none !important;
 }
 
 @media (min-width: 1000px) {
@@ -163,6 +188,13 @@ a button.btn {
   div.cursors div span.visibile {
     opacity: 1;
   }
+  a {
+    cursor: none;
+  }
+
+  a button.btn {
+    cursor: none !important;
+  }
 }
 
 @media (max-width: 999px) {
@@ -176,24 +208,7 @@ h4,
 h3 {
   font-family: "lato", sans-serif;
 }
-/* @keyframes animate-type {
-  0% {
-    font-variation-settings: "wght" 400, "slnt" 0;
-    letter-spacing: 0;
-  }
-  40% {
-    font-variation-settings: "wght" 400, "slnt" 0;
-    letter-spacing: 0;
-  }
-  60% {
-    font-variation-settings: "wght" 400, "slnt" 0;
-    letter-spacing: 0;
-  }
-  100% {
-    font-variation-settings: "wght" 900, "slnt" -8;
-    letter-spacing: 3px;
-  }
-} */
+
 .skill {
   margin-bottom: 90px;
 }
@@ -567,6 +582,7 @@ canvas {
 .background-wobble img {
   border-radius: 5px;
   position: absolute;
+  bottom: 0;
 }
 
 .image img.played {
@@ -602,6 +618,28 @@ canvas {
   height: 400px;
   border-radius: 5px;
   z-index: 5;
+  position: relative;
+  top: 20px;
+}
+.image img.loadstretch {
+  animation-name: imageLoadStretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+@keyframes imageLoadStretch {
+  0% {
+    bottom: 0;
+  }
+  20% {
+    bottom: 10px;
+    transform: rotate(1deg);
+  }
+  100% {
+    bottom: 0;
+  }
 }
 
 .image img.play {
@@ -610,11 +648,7 @@ canvas {
   animation-fill-mode: forwards;
   animation-direction: normal;
 }
-@media (max-width: 991px) {
-  .project-padding {
-    padding: 20px;
-  }
-}
+
 @keyframes reversed-image-wobble {
   0% {
     transform: translate(-400px, -800px) rotate(-50deg);
@@ -725,6 +759,9 @@ canvas {
 @media (max-width: 1200px) {
   .about img {
     max-width: 350px;
+  }
+  .background-wobble {
+    top: -20px;
   }
 }
 
