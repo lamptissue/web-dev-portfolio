@@ -3,7 +3,7 @@ import { pageLoad } from "./pageload.js";
 import { handleCustomCursor } from "./cursor.js";
 import { skillsMatter } from "./skills-matter.js";
 import { wobbly } from "./wobbly-image.js";
-const isHomePage = window.location.pathname === "/"; // Adjust the path if your home page has a different URL
+const isHomePage = window.location.pathname === "/";
 
 document.addEventListener("DOMContentLoaded", function () {
   if (isHomePage) {

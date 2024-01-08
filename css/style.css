@@ -259,6 +259,10 @@ header nav a {
   color: black;
 }
 
+a.links {
+  font-weight: 700;
+}
+
 header a:link,
 header a:visited {
   color: #000;

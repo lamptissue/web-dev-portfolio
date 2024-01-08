@@ -123,6 +123,22 @@ export function skillsMatter() {
     },
   });
 
+  const typescript = Bodies.circle(450, 300, 36, {
+    render: {
+      sprite: {
+        texture: "../logos/typescript.png",
+      },
+    },
+  });
+
+  const nextjs = Bodies.circle(450, 300, 36, {
+    render: {
+      sprite: {
+        texture: "../logos/next-js.png",
+      },
+    },
+  });
+
   // let bigBall;
   // if (window.innerWidth < 1500) {
   //   bigBall = Bodies.rectangle(w / 2, h / 2, 320, 15, {
@@ -273,6 +289,8 @@ export function skillsMatter() {
 
   Composite.add(engine.world, [
     ground,
+    nextjs,
+    typescript,
     bigHead,
     html,
     css,
