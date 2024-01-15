@@ -8,21 +8,19 @@ export function skillsMatter() {
 
   if (window.innerWidth > 900) {
     w = window.innerWidth / 2 - 20;
-    h = window.innerHeight / 2 + 50;
+    h = window.innerHeight / 2 + 100;
   } else {
     w = window.innerWidth - 20;
     h = window.innerHeight / 2;
   }
 
   const skills = document.querySelector("div.skills-matter");
-  const skillsRect = skills.getBoundingClientRect();
+  // const skillsRect = skills.getBoundingClientRect();
 
   const renderer = Render.create({
     element: skills,
     engine: engine,
     options: {
-      // background: "#d8f9ff",
-      // background: "#ffdde2",
       background: "#f5f5f5",
       wireframes: false,
       pixelRatio: window.devicePixelRatio,
@@ -39,8 +37,6 @@ export function skillsMatter() {
       },
     },
   });
-
-  //Delete these later
 
   const html = Bodies.rectangle(40, 150, 75, 85, {
     render: {

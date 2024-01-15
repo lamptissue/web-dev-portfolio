@@ -1,10 +1,9 @@
 export function handleCustomCursor() {
-  console.log("hiya");
   const cursor = document.querySelector("div.cursors");
   const ball = cursor.querySelectorAll("div");
   const links = document.querySelectorAll("a");
   const form = document.getElementById("contact-form");
-  const isHomePage = window.location.pathname === "/"; // Adjust the path if your home page has a different URL
+  const isHomePage = window.location.pathname === "/";
 
   let aimX = 0;
   let aimY = 0;

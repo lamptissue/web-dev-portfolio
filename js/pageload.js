@@ -4,8 +4,7 @@ export function pageLoad() {
   const cursor = document.querySelector("div.cursors");
 
   document.body.style.overflow = "hidden";
-  const header = document.getElementsByTagName("header")[0];
-  header.style.zIndex = "0";
+  const header = document.querySelector("header");
   cursor.style.display = "none";
 
   text.forEach((text) => {
@@ -13,11 +12,9 @@ export function pageLoad() {
     setTimeout(() => {
       loading.classList.add("hidden");
       cursor.style.display = "block";
-
       document.body.style.overflow = "auto";
-      setTimeout(() => {
-        header.style.zIndex = "1030";
-      }, 800);
+
+      header.style.display = "flex";
     }, 2800);
   });
 }

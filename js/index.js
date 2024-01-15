@@ -12,5 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     pageLoad();
     wobbly();
   }
+  if (!isHomePage) {
+    document.querySelector("header").style.display = "flex";
+  }
   handleCustomCursor();
 });

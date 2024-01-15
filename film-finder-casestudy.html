@@ -79,9 +79,9 @@
               <h1>Film Finder</h1>
               <p>
                 Film Finder allows users to explore and discover a range of films. By using a custom-built API, users
-                can access detailed information about the films such as release dates, director and genre. Users can
-                also create their own list of favourite films. The website is developed using Node.js and Express.js for
-                the backend, MongoDB for data storage, React for the frontend and Styled Components for the CSS.
+                can create their list of favourite films as well as access detailed information about the films such as
+                release dates, director and genre. The website is developed using Node.js and Express.js for the
+                backend, MongoDB for data storage, React for the frontend and Styled Components for the CSS.
               </p>
               <div class="d-flex">
                 <a href="https://github.com/lamptissue/Film-finder-React" target="_blank"
@@ -148,22 +148,23 @@
             </div>
           </div>
 
-          <div class="row d-flex justify-content-between align-items-center">
+          <div class="row mt-5 mb-2 d-flex justify-content-between align-items-center mt-lg-0">
             <div class="col-lg-6">
               <h2>Objective</h2>
               <p>
-                The objective of this project is to gain a good understanding of building a custom API and also a deeper
-                understanding of React and React features such as Hooks which is a useful feature for managing state and
-                enabling more efficient functional components.
+                To gain a good understanding of building a custom API and more experience using React as well as React
+                features such as Hooks.
               </p>
               <h2>Approach</h2>
               <p>
-                The project began by assembling a collection of 12 films from the top 20 films of all time, storing the
-                details in a JSON file including film summaries, release dates, directors, and director biographies. To
-                ensure proper connectivity, I created a simple API with GET requests using Postman to test fetching all
-                films, specific films, films by director, and films by genre. Once verified locally, I integrated
-                MongoDB using Mongoose schema for data storage. To make sure everything was working correctly, I created
-                a simple website using JavaScript and a fetch request to retrieve film data from the API.
+                The project began by gathering a database of films, with their details such as summaries, release dates,
+                directors and director biographies stored in a JSON file. To ensure proper connectivity, I created a
+                simple API with GET requests using Postman to test all fetching requests.
+                <!--all films, specific films, films by
+                director, and films by genre. Once it was verified locally,-->
+                I integrated MongoDB using Mongoose schema for data storage and to ensure everything was working
+                correctly, I created a simple site using JavaScript and a fetch request to retrieve film data from the
+                API.
               </p>
             </div>
             <div class="col-lg-6 mb-4"><img src="img/postman-screen.png" class="img-fluid rounded" /></div>
@@ -172,47 +173,45 @@
           <div class="row mb-5 d-flex justify-content-center align-items-center">
             <div class="col-lg">
               <p>
-                Moving onto front-end development, I opted for React due to its popularity, component-based
-                architecture, and efficient rendering capabilities. Starting with the film grid, I built a dynamic
-                layout to render the films. Then, I focused on creating a side panel displaying more detailed
-                information on the films, and then a film search functionality. Lastly, I implemented a favourite
-                feature, enabling users to select their preferred films and easily access them with a click of a button,
-                enhancing interactivity and user experience on the Film Finder website.
+                I chose React as the front-end framework due to its popularity, component-based architecture, and
+                efficient rendering capabilities. I built a dynamic layout to render the films in a film grid and
+                designed a side panel to display more detailed information on the films as well as a film search
+                functionality. The site also includes a favourite feature that allows users to select and access their
+                preferred films, which are stored locally.
+              </p>
+              <p>
+                Building on the site’s interactivity, I added POST, PUT, and DELETE API requests that are handled using
+                Axios. These requests enable users to create a personal profile and modify essential details such as
+                usernames and email addresses. They can also save their favourite films to their profile and view or
+                remove them later. The user authentication is processed using JWT tokens, enabling a secure login
+                experience.
               </p>
             </div>
           </div>
 
           <div class="row">
-            <!-- TO BE UPDATED -->
-            <div class="col-lg-6 d-flex justify-content-around flex-column">
-              <h2>Updated features</h2>
+            <div class="col-lg-5 d-flex flex-column">
+              <h2>Key learnings</h2>
               <p>
-                I updated the functionality of the the API with POST, PUT and DELETE requests and impluented user
-                authentication with JWT tokens allowing users to securely create a profile and save their favourite
-                films on a database. Users are also able to update personal details and edit or remove their current
-                saved films enhancing the functionality and interactivity of the Film Finder website.
+                Gaining valuable experience in React Hooks and their importance in managing state and improving
+                component efficiency, I also developed my understanding of creating secure APIs by implementing GET,
+                POST, PUT and DELETE requests.
               </p>
-              <h2>Key learnings and next steps</h2>
-              <p>
-                Throughout the project, I gained a valuable understanding of React Hooks and their significance in
-                managing state and building more efficient components. I also gained a good understanding of building
-                APIs
-                <br />
-                Looking ahead, the next steps involve expanding the website's functionality by implementing user
-                authentication, enabling users to create profiles, and allowing them to save their favourite films.
-                Lastly, adding POST, PUT, and DELETE requests to the API will allow users the ability to create, update,
-                and delete favourite films and their profiles, further enhancing the functionality and interactivity of
-                the Film Finder website.
-              </p>
-
               <p class="fw-bold">Wanna find out more eh?</p>
               <a href="/#contact" target="_blank"><button class="case-study-button mb-4">Get in touch!</button></a>
             </div>
-            <div class="col-lg-6 key-learnings center-everything">
-              <img
-                src="https://res.cloudinary.com/lamptissue/image/upload/v1688915982/infoimage_tvvrvj.png"
-                class="img-flud"
-              />
+
+            <div class="col-lg-7">
+              <div class="video p-2">
+                <iframe
+                  src="https://player.vimeo.com/video/902281506?h=d78579e6f2&autoplay=1&loop=1"
+                  width="1000"
+                  height="500"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -229,6 +228,5 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="js/index.js"></script>
-    <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>

@@ -8,14 +8,21 @@ export function wobbly() {
     image.classList.remove("loadstretch");
   }, 6000);
 
-  image.addEventListener("mouseenter", function () {
+  const mouseOverHandler = function () {
     image.classList.remove("played");
     image.classList.add("play");
-  });
-  image.addEventListener("mouseleave", function () {
+
     setTimeout(() => {
       image.classList.remove("play");
       image.classList.add("played");
     }, 8000);
-  });
+
+    image.removeEventListener("mouseover", mouseOverHandler);
+
+    setTimeout(() => {
+      image.addEventListener("mouseover", mouseOverHandler);
+    }, 10000);
+  };
+
+  image.addEventListener("mouseover", mouseOverHandler);
 }
